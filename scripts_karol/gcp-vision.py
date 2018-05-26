@@ -76,17 +76,51 @@ def detect_gcp(face_file, max_results=4):
         info['faces'] = []
 
     for f in face_annotations:
-        # bounding_poly = {"xmin":min(f.bounding_poly.vertices[0].x, f.bounding_poly.vertices[0].x,)}
+        bounding_poly = {"xmin":min(f.bounding_poly.vertices[0].x,
+                                    f.bounding_poly.vertices[1].x,
+                                    f.bounding_poly.vertices[2].x,
+                                    f.bounding_poly.vertices[3].x),
+                         "ymin":min(f.bounding_poly.vertices[0].y,
+                                    f.bounding_poly.vertices[1].y,
+                                    f.bounding_poly.vertices[2].y,
+                                    f.bounding_poly.vertices[3].y),
+                         "xmax":max(f.bounding_poly.vertices[0].x,
+                                    f.bounding_poly.vertices[1].x,
+                                    f.bounding_poly.vertices[2].x,
+                                    f.bounding_poly.vertices[3].x),
+                         "ymax":max(f.bounding_poly.vertices[0].y,
+                                    f.bounding_poly.vertices[1].y,
+                                    f.bounding_poly.vertices[2].y,
+                                    f.bounding_poly.vertices[3].y)}
+
+        fd_bounding_poly = {"xmin":min(f.fd_bounding_poly.vertices[0].x,
+                                    f.fd_bounding_poly.vertices[1].x,
+                                    f.fd_bounding_poly.vertices[2].x,
+                                    f.fd_bounding_poly.vertices[3].x),
+                         "ymin":min(f.fd_bounding_poly.vertices[0].y,
+                                    f.fd_bounding_poly.vertices[1].y,
+                                    f.fd_bounding_poly.vertices[2].y,
+                                    f.fd_bounding_poly.vertices[3].y),
+                         "xmax":max(f.fd_bounding_poly.vertices[0].x,
+                                    f.fd_bounding_poly.vertices[1].x,
+                                    f.fd_bounding_poly.vertices[2].x,
+                                    f.fd_bounding_poly.vertices[3].x),
+                         "ymax":max(f.fd_bounding_poly.vertices[0].y,
+                                    f.fd_bounding_poly.vertices[1].y,
+                                    f.fd_bounding_poly.vertices[2].y,
+                                    f.fd_bounding_poly.vertices[3].y)}
+        print(bounding_poly)
+        print(fd_bounding_poly)
         info['faces'].append({"joy": f.joy_likelihood,
                               "sorrow": f.sorrow_likelihood,
                               "anger": f.anger_likelihood,
                               "surprise": f.surprise_likelihood,
                               "under_exposed": f.under_exposed_likelihood,
                               "blurred": f.blurred_likelihood,
-                              "headwear": f.headwear_likelihood})
-
-    # print(info)
-
+                              "headwear": f.headwear_likelihood,
+                              "fd_bounding_poly": fd_bounding_poly,
+                              "bounding_poly": bounding_poly})
+    print(info)
     return info
 
 def highlight_faces(image, faces, output_filename):
@@ -125,7 +159,9 @@ if __name__ == '__main__':
 
     images = sorted(glob(args.images_dir + "/*.jpg"))
 
-    result_json = dict()
+    result_json = []
     for img in tqdm(images):
-        result_json[img.split('/')[-1]] = main(img, 1000)
+        res = main(img, 1000)
+        res['fname'] = img.split('/')[-1]
+        result_json.append(res)
     print(result_json)
