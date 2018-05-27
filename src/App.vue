@@ -6,6 +6,7 @@
                 <i class="material-icons back-button">arrow_back</i>
             </button>
             <ArtsList :worksOfArt="filteredWorksOfArt"/>
+            <LevelMap :rooms="rooms" width="800" height="400"/>
         </div>
     </div>
 </template>
@@ -13,8 +14,10 @@
 <script>
     import TopicsList from './components/TopicsList.vue'
     import ArtsList from './components/ArtsList.vue'
+    import LevelMap from './components/LevelMap.vue'
     import worksOfArt from './assets/data.json'
     import topicsList from './assets/topics.json'
+    import rooms from './assets/rooms.json'
     import {EventBus} from './main.js';
 
     export default {
@@ -29,12 +32,15 @@
             });
         },
         components: {
-            TopicsList, ArtsList
+            TopicsList,
+            ArtsList,
+            LevelMap
         },
         data: function () {
             return {
                 worksOfArt,
                 topicsList,
+                rooms,
                 selectedTopic: null,
                 topicSelection: true
             };
