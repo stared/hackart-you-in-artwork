@@ -1,25 +1,55 @@
 <template>
-    <div id="app">
-        <TopicsList/>
-        <ArtsList :worksOfArt="worksOfArt"/>
+    <div id="app" class="content-grid mdl-grid">
+        <TopicsList :topics="topicsList"/>
+        <ArtsList v-on:topic-selected="foo123" :worksOfArt="filteredWorksOfArt"/>
     </div>
+
+    <!--<div id="app">-->
+    <!--<TopicsList :topics="topicsList"/>-->
+    <!--<ArtsList v-on:topic-selected="foo123" :worksOfArt="filteredWorksOfArt"/>-->
+    <!--</div>-->
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
     import TopicsList from './components/TopicsList.vue'
     import ArtsList from './components/ArtsList.vue'
     import worksOfArt from './assets/data.json'
+    import topicsList from './assets/topics.json'
 
     export default {
         name: 'app',
         components: {
-            HelloWorld, TopicsList, ArtsList
+            TopicsList, ArtsList
         },
+        // state: {
+        //     selectedTopic: null
+        // },
         data: function () {
             return {
-                worksOfArt
+                worksOfArt,
+                topicsList,
+                selectedTopic: null
             };
+        },
+        watch: {
+            selectedTopic: function (val) {
+                console.log("foo");
+            }
+        },
+        computed: {
+            filteredWorksOfArt: function () {
+                if (this.selectedTopic != null) {
+                    const list = topicsList[this.selectedTopic];
+                    return worksOfArt.filter(w => list.images.indexOf(w.fname) === -1);
+                } else {
+                    return worksOfArt;
+                }
+            }
+        },
+        methods: {
+            foo123: function () {
+                console.log("123");
+            }
         }
     }
 </script>
@@ -32,5 +62,8 @@
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
+    }
+    .content-grid {
+        max-width: 960px;
     }
 </style>

@@ -1,0 +1,5 @@
+[
+    {"id": 0, "title": "Przyroda", "images": ["0001.jpg", "0002.jpg"]},
+    {"id": 1, "title": "Nauka", "images": ["0003.jpg", "0004.jpg"]},
+    {"id": 2, "title": "Wojna", "images": ["0005.jpg", "0006.jpg"]}
+]

@@ -1,5 +1,5 @@
 <template>
-    <li id="topic">{{topic.title}}</li>
+    <li id="topic" v-on:click="$emit('topic-selected', topic)">{{topic.title}}</li>
 </template>
 
 <script>

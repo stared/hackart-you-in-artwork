@@ -4,6 +4,7 @@
                 v-for="topic in topics"
                 v-bind:key="topic.id"
                 v-bind:topic="topic"
+                v-on:topic-selected="onTopicSelected"
         ></topic>
     </ul>
 </template>
@@ -13,14 +14,16 @@
 
     export default {
         name: "topics-list",
+        props: ['topics'],
         data: function () {
             return {
-                topics: [
-                    {id: 0, title: 'Przyroda'},
-                    {id: 1, title: 'Nauka'},
-                    {id: 2, title: 'Wojna'}
-                ]
+                selectedTopic: null
             };
+        },
+        methods: {
+            onTopicSelected: function(topic) {
+
+            }
         },
         components: {
             Topic
