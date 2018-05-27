@@ -139,7 +139,7 @@
   },
   {
     "id": 1,
-    "category": "Zwierzęta",
+    "title": "Zwierzęta",
     "items": [
       {
         "element": "img00000153.jpg",
@@ -213,7 +213,7 @@
   },
   {
     "id": 2,
-    "category": "Przyroda",
+    "title": "Drzewa",
     "items": [
       {
         "element": "img00000162.jpg",
@@ -323,7 +323,7 @@
   },
   {
     "id": 3,
-    "category": "Części ciała",
+    "title": "Części ciała",
     "items": [
       {
         "element": "img00000119.jpg",
@@ -401,7 +401,7 @@
   },
   {
     "id": 4,
-    "category": "XXX",
+    "title": "Architektura",
     "items": [
       {
         "element": "img00000009.jpg",
