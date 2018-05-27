@@ -4,25 +4,36 @@
                 v-for="w in worksOfArt"
                 v-bind:key="w.fname"
                 v-bind:workOfArt="w"
+                v-on:work-seen="onWorkSeen($event)"
         ></WorkOfArt>
     </div>
-    <!--<ul id="ArtsList">-->
-        <!--<WorkOfArt-->
-                <!--v-for="w in worksOfArt"-->
-                <!--v-bind:key="w.fname"-->
-                <!--v-bind:workOfArt="w"-->
-        <!--&gt;</WorkOfArt>-->
-    <!--</ul>-->
 </template>
 
 <script>
     import WorkOfArt from './WorkOfArt.vue'
+    import { EventBus } from '../main.js';
 
     export default {
         name: "ArtsList",
         props: ['worksOfArt'],
+        data() {
+            return {
+                seenWorks: []
+            }
+        },
         components: {
             WorkOfArt
+        },
+        methods: {
+            onWorkSeen: function (work) {
+                if (this.seenWorks.indexOf(work.fname) === -1) {
+                    this.seenWorks.push(work.fname);
+                }
+                console.log('Already saw', this.seenWorks.length, '/', this.worksOfArt.length)
+                if (this.seenWorks.length === this.worksOfArt.length) {
+                    EventBus.$emit('saw-all');
+                }
+            }
         }
     }
 </script>

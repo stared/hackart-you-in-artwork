@@ -18,6 +18,9 @@
             EventBus.$on('topic-selected', (topic) => {
                 this.selectedTopic = topic
             });
+            EventBus.$on('saw-all', () => {
+                alert('Zgłoś się po coś słodkiego w kasie');
+            });
         },
         components: {
             TopicsList, ArtsList
