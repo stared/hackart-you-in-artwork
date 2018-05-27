@@ -1,7 +1,7 @@
 <template>
     <div class="mdl-cell mdl-cell--4-col">
         <div id="work" class="demo-card-image mdl-card mdl-shadow--2dp"
-             v-bind:style="{background: 'url(' + workOfArt.img + ') center / cover'}">
+             v-bind:style="{background: 'url(images/' + workOfArt.fname + ') center / cover'}">
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
                 <span class="demo-card-image__filename">{{workOfArt.title}}</span>
