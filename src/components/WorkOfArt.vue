@@ -19,6 +19,20 @@
 </template>
 
 <script>
+
+    const znajdzTexts = [
+        "Znajdź!",
+        "A gdzie to jest?",
+        "To jest ukryte :)",
+        "???",
+        "Tajemnica! ;)",
+        "Ooo, to trudne!",
+        "Dasz radę?",
+        "Wyzwanie dla Ciebie!"
+    ];
+
+    const randomChoice = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
     export default {
         name: 'work',
         props: ['workOfArt'],
@@ -44,7 +58,7 @@
                 if (this.seen) {
                     return this.workOfArt.workOfArt.title;
                 } else {
-                    return "Znajdź!";
+                    return randomChoice(znajdzTexts);
                 }
             }
         }
