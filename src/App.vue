@@ -1,5 +1,10 @@
 <template>
     <div id="app" class="content-grid mdl-grid">
+        <header class="mdl-layout__header my-header">
+            <div class="mdl-layout__header-row header-row">
+                <span class="mdl-layout-title">Tajemnice muzeum - <small>znajdź ukryte szczegóły na obrazach!</small></span>
+            </div>
+        </header>
         <TopicsList v-if="topicSelection" :topics="topicsList"/>
         <div v-if="!topicSelection" class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
             <button class="mdl-button mdl-js-button" v-on:click="topicSelection=true">
@@ -83,5 +88,12 @@
 
     .back-button {
         float: left;
+    }
+
+    .my-header {
+        background: #990066ff;
+    }
+    .header-row {
+        padding: 16px;
     }
 </style>
