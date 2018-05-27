@@ -1,7 +1,24 @@
 <template>
     <div id="app" class="content-grid mdl-grid">
         <TopicsList :topics="topicsList"/>
-        <ArtsList :worksOfArt="filteredWorksOfArt"/>
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <div class="mdl-tabs__tab-bar">
+                <a href="#starks-panel" class="mdl-tabs__tab is-active">Lista</a>
+                <a href="#lannisters-panel" class="mdl-tabs__tab">Mapa</a>
+            </div>
+
+            <div class="mdl-tabs__panel is-active" id="starks-panel">
+                <ArtsList :worksOfArt="filteredWorksOfArt"/>
+            </div>
+            <div class="mdl-tabs__panel" id="lannisters-panel">
+                <ul>
+                    <li>Tywin</li>
+                    <li>Cersei</li>
+                    <li>Jamie</li>
+                    <li>Tyrion</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,7 +36,7 @@
                 this.selectedTopic = topic
             });
             EventBus.$on('saw-all', () => {
-                alert('Zgłoś się po coś słodkiego w kasie');
+                alert('Zgłoś się do kasy po coś słodkiego');
             });
         },
         components: {

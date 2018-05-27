@@ -1,12 +1,12 @@
 <template>
-    <ul id="topics-list" class="mdl-list">
+    <div class="mdl-grid">
         <topic
                 v-for="topic in topics"
                 v-bind:key="topic.id"
                 v-bind:topic="topic"
                 v-on:topic-selected="onTopicSelected($event)"
         ></topic>
-    </ul>
+    </div>
 </template>
 
 <script>

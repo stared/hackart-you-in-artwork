@@ -10,15 +10,10 @@
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored add-button"
                         v-on:click="markSeen" v-if="!seen"
                 >
-                    <i class="material-icons">add</i>
+                    <i class="material-icons">done</i>
                 </button>
                 <i class="material-icons seen-icon" v-if="seen">done</i>
             </div>
-            <!--<div class="mdl-card__menu">-->
-            <!--<label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">-->
-            <!--<input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">-->
-            <!--</label>-->
-            <!--</div>-->
         </div>
     </div>
 </template>
