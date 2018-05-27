@@ -5,7 +5,7 @@
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
                 <div style="width: 80%">
-                    <span class="demo-card-image__filename">{{workOfArt.workOfArt.title}}</span>
+                    <span class="demo-card-image__filename">{{title}}</span>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored add-button"
                         v-on:click="markSeen" v-if="!seen"
@@ -38,6 +38,15 @@
                     this.background = 'url(cropped/' + this.workOfArt.element + ') center / cover';
                 }
             }
+        },
+        computed: {
+            title: function () {
+                if (this.seen) {
+                    return this.workOfArt.workOfArt.title;
+                } else {
+                    return "Znajdź!";
+                }
+            }
         }
     }
 </script>
@@ -64,12 +73,12 @@
     .add-button {
         position: absolute;
         bottom: 12px;
-        right: 12px;;
+        right: 12px;
     }
     .seen-icon {
         color: #fff;
         position: absolute;
         bottom: 18px;
-        right: 18px;;
+        right: 18px;
     }
 </style>
