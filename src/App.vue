@@ -2,7 +2,7 @@
     <div id="app" class="content-grid mdl-grid">
         <header class="mdl-layout__header my-header">
             <div class="mdl-layout__header-row header-row">
-                <span class="mdl-layout-title">Tajemnice muzeum - <small>znajdź ukryte szczegóły na obrazach!</small></span>
+                <span class="mdl-layout-title">Skarby muzeum - <small>znajdź ukryte szczegóły na obrazach!</small></span>
             </div>
         </header>
         <TopicsList v-if="topicSelection" :topics="topicsList"/>
