@@ -11,9 +11,10 @@ with open("../data/oidv3.json") as f:
 for key in sorted(data.keys()):
     img = cv2.imread("../../images/"+key)
     # img = cv2.resize(img, (0,0), fx=0.5, fy=0.5)
-    cv2.imshow('img', img)
+    # cv2.imshow('img', img)
     for bbox in data[key]:
-        box = {'orig_fname': key, "fname": "img%08d.jpg" % counter, "class": bbox['name']}
+        box = {'orig_fname': key, "fname": "img%08d.jpg" % counter,
+               "class": bbox['name']}
         xmin = int(img.shape[1] * float(bbox['ymin']))
         ymin = int(img.shape[0] * float(bbox['xmin']))
         xmax = int(img.shape[1] * float(bbox['ymax']))
