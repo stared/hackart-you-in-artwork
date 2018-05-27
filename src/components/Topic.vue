@@ -1,5 +1,5 @@
 <template>
-    <li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">
+    <li v-on:click="$emit('topic-selected', topic)" class="mdl-list__item topic">
         <div>
             <div>
                 <img class="category-button" :src="iconPath"/><br/>
@@ -28,5 +28,15 @@
         display: block;
         width: 240px;
         height: 240px;
+    }
+
+    .topic {
+        cursor: pointer;
+        transform: scale(0.9);
+        transition: transform .2s;
+    }
+
+    .topic:hover {
+        transform: scale(1.2);
     }
 </style>
