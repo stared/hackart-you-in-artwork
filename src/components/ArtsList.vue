@@ -2,7 +2,7 @@
     <div id="ArtsList" class="mdl-grid">
         <WorkOfArt
                 v-for="w in worksOfArt"
-                v-bind:key="w.fname"
+                v-bind:key="w.element"
                 v-bind:workOfArt="w"
                 v-on:work-seen="onWorkSeen($event)"
         ></WorkOfArt>
