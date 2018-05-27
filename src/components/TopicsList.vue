@@ -1,5 +1,5 @@
 <template>
-    <ul id="topics-list">
+    <ul id="topics-list" class="mdl-list">
         <topic
                 v-for="topic in topics"
                 v-bind:key="topic.id"
@@ -22,7 +22,7 @@
         },
         methods: {
             onTopicSelected: function(topic) {
-
+                
             }
         },
         components: {

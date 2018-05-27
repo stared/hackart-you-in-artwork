@@ -3,11 +3,6 @@
         <TopicsList :topics="topicsList"/>
         <ArtsList v-on:topic-selected="foo123" :worksOfArt="filteredWorksOfArt"/>
     </div>
-
-    <!--<div id="app">-->
-    <!--<TopicsList :topics="topicsList"/>-->
-    <!--<ArtsList v-on:topic-selected="foo123" :worksOfArt="filteredWorksOfArt"/>-->
-    <!--</div>-->
 </template>
 
 <script>
@@ -63,6 +58,7 @@
         color: #2c3e50;
         margin-top: 60px;
     }
+
     .content-grid {
         max-width: 960px;
     }

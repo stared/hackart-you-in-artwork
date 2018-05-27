@@ -1,5 +1,7 @@
 <template>
-    <li id="topic" v-on:click="$emit('topic-selected', topic)">{{topic.title}}</li>
+    <li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">
+        <span class="mdl-list__item-primary-content"><i class="material-icons mdl-list__item-icon">star</i>{{topic.title}}</span>
+    </li>
 </template>
 
 <script>
