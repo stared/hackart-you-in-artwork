@@ -1,23 +1,11 @@
 <template>
     <div id="app" class="content-grid mdl-grid">
-        <TopicsList :topics="topicsList"/>
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-            <div class="mdl-tabs__tab-bar">
-                <a href="#starks-panel" class="mdl-tabs__tab is-active">Lista</a>
-                <a href="#lannisters-panel" class="mdl-tabs__tab">Mapa</a>
-            </div>
-
-            <div class="mdl-tabs__panel is-active" id="starks-panel">
-                <ArtsList :worksOfArt="filteredWorksOfArt"/>
-            </div>
-            <div class="mdl-tabs__panel" id="lannisters-panel">
-                <ul>
-                    <li>Tywin</li>
-                    <li>Cersei</li>
-                    <li>Jamie</li>
-                    <li>Tyrion</li>
-                </ul>
-            </div>
+        <TopicsList v-if="topicSelection" :topics="topicsList"/>
+        <div v-if="!topicSelection" class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <button class="mdl-button mdl-js-button" v-on:click="topicSelection=true">
+                <i class="material-icons back-button">arrow_back</i>
+            </button>
+            <ArtsList :worksOfArt="filteredWorksOfArt"/>
         </div>
     </div>
 </template>
@@ -34,6 +22,7 @@
         created: function () {
             EventBus.$on('topic-selected', (topic) => {
                 this.selectedTopic = topic
+                this.topicSelection = false;
             });
             EventBus.$on('saw-all', () => {
                 alert('Zgłoś się do kasy po coś słodkiego');
@@ -42,20 +31,13 @@
         components: {
             TopicsList, ArtsList
         },
-        // state: {
-        //     selectedTopic: null
-        // },
         data: function () {
             return {
                 worksOfArt,
                 topicsList,
-                selectedTopic: null
+                selectedTopic: null,
+                topicSelection: true
             };
-        },
-        watch: {
-            selectedTopic: function (val) {
-                console.log("foo");
-            }
         },
         computed: {
             filteredWorksOfArt: function () {
@@ -86,5 +68,9 @@
 
     .content-grid {
         max-width: 960px;
+    }
+
+    .back-button {
+
     }
 </style>
