@@ -128,40 +128,12 @@
     "icon": "img00000938.jpg",
     "items": [
       {
-        "element": "img00000153.jpg",
-        "original": "0031.jpg"
-      },
-      {
-        "element": "img00000158.jpg",
-        "original": "0031.jpg"
-      },
-      {
-        "element": "img00000482.jpg",
-        "original": "0083.jpg"
-      },
-      {
-        "element": "img00000483.jpg",
-        "original": "0083.jpg"
-      },
-      {
-        "element": "img00000484.jpg",
-        "original": "0083.jpg"
-      },
-      {
         "element": "img00000487.jpg",
         "original": "0083.jpg"
       },
       {
-        "element": "img00000346.jpg",
-        "original": "0064.jpg"
-      },
-      {
         "element": "img00000347.jpg",
         "original": "0064.jpg"
-      },
-      {
-        "element": "img00000716.jpg",
-        "original": "0122.jpg"
       },
       {
         "element": "img00000717.jpg",
@@ -176,23 +148,11 @@
         "original": "0152.jpg"
       },
       {
-        "element": "img00000887.jpg",
-        "original": "0152.jpg"
-      },
-      {
         "element": "img00000917.jpg",
         "original": "0158.jpg"
       },
       {
-        "element": "img00000920.jpg",
-        "original": "0158.jpg"
-      },
-      {
         "element": "img00000938.jpg",
-        "original": "0162.jpg"
-      },
-      {
-        "element": "img00000939.jpg",
         "original": "0162.jpg"
       }
     ]
@@ -207,23 +167,11 @@
         "original": "0032.jpg"
       },
       {
-        "element": "img00000163.jpg",
-        "original": "0032.jpg"
-      },
-      {
-        "element": "img00000164.jpg",
-        "original": "0032.jpg"
-      },
-      {
         "element": "img00000213.jpg",
         "original": "0040.jpg"
       },
       {
         "element": "img00000216.jpg",
-        "original": "0041.jpg"
-      },
-      {
-        "element": "img00000217.jpg",
         "original": "0041.jpg"
       },
       {
@@ -235,19 +183,7 @@
         "original": "0063.jpg"
       },
       {
-        "element": "img00000396.jpg",
-        "original": "0071.jpg"
-      },
-      {
         "element": "img00000397.jpg",
-        "original": "0071.jpg"
-      },
-      {
-        "element": "img00000399.jpg",
-        "original": "0071.jpg"
-      },
-      {
-        "element": "img00000400.jpg",
         "original": "0071.jpg"
       },
       {
@@ -259,10 +195,6 @@
         "original": "0133.jpg"
       },
       {
-        "element": "img00000774.jpg",
-        "original": "0133.jpg"
-      },
-      {
         "element": "img00000922.jpg",
         "original": "0159.jpg"
       },
@@ -271,28 +203,8 @@
         "original": "0165.jpg"
       },
       {
-        "element": "img00000957.jpg",
-        "original": "0165.jpg"
-      },
-      {
-        "element": "img00000956.jpg",
-        "original": "0165.jpg"
-      },
-      {
-        "element": "img00000957.jpg",
-        "original": "0165.jpg"
-      },
-      {
         "element": "img00001065.jpg",
         "original": "0186.jpg"
-      },
-      {
-        "element": "img00001066.jpg",
-        "original": "0186.jpg"
-      },
-      {
-        "element": "img00001081.jpg",
-        "original": "0192.jpg"
       },
       {
         "element": "img00001082.jpg",
@@ -301,10 +213,6 @@
       {
         "element": "img00001084.jpg",
         "original": "0194.jpg"
-      },
-      {
-        "element": "img00001102.jpg",
-        "original": "0199.jpg"
       }
     ]
   },
@@ -338,22 +246,6 @@
         "original": "0067.jpg"
       },
       {
-        "element": "img00000370.jpg",
-        "original": "0067.jpg"
-      },
-      {
-        "element": "img00000804.jpg",
-        "original": "0139.jpg"
-      },
-      {
-        "element": "img00000807.jpg",
-        "original": "0139.jpg"
-      },
-      {
-        "element": "img00000808.jpg",
-        "original": "0139.jpg"
-      },
-      {
         "element": "img00001007.jpg",
         "original": "0174.jpg"
       },
@@ -362,20 +254,8 @@
         "original": "0182.jpg"
       },
       {
-        "element": "img00000254.jpg",
-        "original": "0049.jpg"
-      },
-      {
-        "element": "img00000256.jpg",
-        "original": "0049.jpg"
-      },
-      {
         "element": "img00000257.jpg",
         "original": "0049.jpg"
-      },
-      {
-        "element": "img00000352.jpg",
-        "original": "0065.jpg"
       },
       {
         "element": "img00000353.jpg",
@@ -397,22 +277,6 @@
         "original": "0002.jpg"
       },
       {
-        "element": "img00000012.jpg",
-        "original": "0002.jpg"
-      },
-      {
-        "element": "img00000016.jpg",
-        "original": "0002.jpg"
-      },
-      {
-        "element": "img00000017.jpg",
-        "original": "0002.jpg"
-      },
-      {
-        "element": "img00000267.jpg",
-        "original": "0051.jpg"
-      },
-      {
         "element": "img00000272.jpg",
         "original": "0051.jpg"
       },
@@ -421,28 +285,12 @@
         "original": "0142.jpg"
       },
       {
-        "element": "img00000836.jpg",
-        "original": "0142.jpg"
-      },
-      {
-        "element": "img00001067.jpg",
-        "original": "0186.jpg"
-      },
-      {
         "element": "img00001068.jpg",
         "original": "0186.jpg"
       },
       {
         "element": "img00001079.jpg",
         "original": "0192.jpg"
-      },
-      {
-        "element": "img00001080.jpg",
-        "original": "0192.jpg"
-      },
-      {
-        "element": "img00000132.jpg",
-        "original": "0027.jpg"
       },
       {
         "element": "img00000133.jpg",
