@@ -1,7 +1,7 @@
 <template>
     <div id="app" class="content-grid mdl-grid">
         <TopicsList :topics="topicsList"/>
-        <ArtsList v-on:topic-selected="foo123" :worksOfArt="filteredWorksOfArt"/>
+        <ArtsList :worksOfArt="filteredWorksOfArt"/>
     </div>
 </template>
 
@@ -10,9 +10,15 @@
     import ArtsList from './components/ArtsList.vue'
     import worksOfArt from './assets/data.json'
     import topicsList from './assets/topics.json'
+    import {EventBus} from './main.js';
 
     export default {
         name: 'app',
+        created: function () {
+            EventBus.$on('topic-selected', (topic) => {
+                this.selectedTopic = topic
+            });
+        },
         components: {
             TopicsList, ArtsList
         },
@@ -34,16 +40,15 @@
         computed: {
             filteredWorksOfArt: function () {
                 if (this.selectedTopic != null) {
-                    const list = topicsList[this.selectedTopic];
-                    return worksOfArt.filter(w => list.images.indexOf(w.fname) === -1);
+                    const list1 = topicsList[this.selectedTopic.id];
+                    console.log('for', this.selectedTopic.title,  'shall show', list1.images);
+                    const list2  = worksOfArt.filter(function (img) {
+                        return list1.images.indexOf(img.fname) !== -1
+                    });
+                    return list2;
                 } else {
                     return worksOfArt;
                 }
-            }
-        },
-        methods: {
-            foo123: function () {
-                console.log("123");
             }
         }
     }
