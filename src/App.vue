@@ -14,14 +14,14 @@
     import TopicsList from './components/TopicsList.vue'
     import ArtsList from './components/ArtsList.vue'
     import worksOfArt from './assets/data.json'
-    import topicsList from './assets/topics.json'
+    import topicsList from './assets/topics2.json'
     import {EventBus} from './main.js';
 
     export default {
         name: 'app',
         created: function () {
             EventBus.$on('topic-selected', (topic) => {
-                this.selectedTopic = topic
+                this.selectedTopic = topic;
                 this.topicSelection = false;
             });
             EventBus.$on('saw-all', () => {
@@ -41,16 +41,22 @@
         },
         computed: {
             filteredWorksOfArt: function () {
+                let result = [];
                 if (this.selectedTopic != null) {
-                    const list1 = topicsList[this.selectedTopic.id];
-                    console.log('for', this.selectedTopic.title,  'shall show', list1.images);
-                    const list2  = worksOfArt.filter(function (img) {
-                        return list1.images.indexOf(img.fname) !== -1
-                    });
-                    return list2;
-                } else {
-                    return worksOfArt;
+                    let items = topicsList[this.selectedTopic.id]['items'];
+                    for (let i = 0; i < items.length; i++) {
+                        let item = items[i];
+                        for (let j = 0; j < worksOfArt.length; j++) {
+                            if (worksOfArt[j].fname === item.original) {
+                                item.original = worksOfArt[j];
+                                result.push(item);
+                                console.log(result.length, item.original.fname);
+                                break;
+                            }
+                        }
+                    }
                 }
+                return result;
             }
         }
     }
@@ -71,6 +77,6 @@
     }
 
     .back-button {
-
+        float: left;
     }
 </style>

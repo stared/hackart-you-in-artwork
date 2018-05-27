@@ -1,11 +1,12 @@
 <template>
     <li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">
-        <button class="mdl-button mdl-js-button
-                       mdl-button--raised
-                       mdl-js-ripple-effect
-                       mdl-button--accent">
-            <i class="material-icons mdl-list__item-icon">star</i>{{topic.title}}
-        </button>
+        <div>
+            <button>
+                <img class="category-button" src="images/0001.jpg"/><br/>
+                <span>{{topic.title}}</span>
+            </button>
+        </div>
+
     </li>
 </template>
 
@@ -17,7 +18,12 @@
 </script>
 
 <style scoped>
-    .mdl-button:hover {
-        background-color: #b77d89
+    .category-button {
+        clip-path: circle(120px at center);
+        display: block;
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
     }
 </style>

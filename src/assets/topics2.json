@@ -1,0 +1,484 @@
+[
+  {
+    "id": 0,
+    "title": "Moda",
+    "items": [
+      {
+        "element": "img00000024.jpg",
+        "original": "0004.jpg"
+      },
+      {
+        "element": "img00000029.jpg",
+        "original": "0005.jpg"
+      },
+      {
+        "element": "img00000048.jpg",
+        "original": "0009.jpg"
+      },
+      {
+        "element": "img00000067.jpg",
+        "original": "0013.jpg"
+      },
+      {
+        "element": "img00000081.jpg",
+        "original": "0016.jpg"
+      },
+      {
+        "element": "img00000083.jpg",
+        "original": "0016.jpg"
+      },
+      {
+        "element": "img00000193.jpg",
+        "original": "0037.jpg"
+      },
+      {
+        "element": "img00000204.jpg",
+        "original": "0039.jpg"
+      },
+      {
+        "element": "img00000206.jpg",
+        "original": "0039.jpg"
+      },
+      {
+        "element": "img00000301.jpg",
+        "original": "0058.jpg"
+      },
+      {
+        "element": "img00000307.jpg",
+        "original": "0059.jpg"
+      },
+      {
+        "element": "img00000309.jpg",
+        "original": "0059.jpg"
+      },
+      {
+        "element": "img00000368.jpg",
+        "original": "0067.jpg"
+      },
+      {
+        "element": "img00000403.jpg",
+        "original": "0072.jpg"
+      },
+      {
+        "element": "img00000453.jpg",
+        "original": "0078.jpg"
+      },
+      {
+        "element": "img00000591.jpg",
+        "original": "0102.jpg"
+      },
+      {
+        "element": "img00000609.jpg",
+        "original": "0105.jpg"
+      },
+      {
+        "element": "img00000613.jpg",
+        "original": "0105.jpg"
+      },
+      {
+        "element": "img00000629.jpg",
+        "original": "0107.jpg"
+      },
+      {
+        "element": "img00000632.jpg",
+        "original": "0107.jpg"
+      },
+      {
+        "element": "img00000668.jpg",
+        "original": "0114.jpg"
+      },
+      {
+        "element": "img00000669.jpg",
+        "original": "0114.jpg"
+      },
+      {
+        "element": "img00000671.jpg",
+        "original": "0114.jpg"
+      },
+      {
+        "element": "img00000672.jpg",
+        "original": "0114.jpg"
+      },
+      {
+        "element": "img00000778.jpg",
+        "original": "0134.jpg"
+      },
+      {
+        "element": "img00000780.jpg",
+        "original": "0134.jpg"
+      },
+      {
+        "element": "img00000839.jpg",
+        "original": "0143.jpg"
+      },
+      {
+        "element": "img00000846.jpg",
+        "original": "0144.jpg"
+      },
+      {
+        "element": "img00000849.jpg",
+        "original": "0144.jpg"
+      },
+      {
+        "element": "img00000861.jpg",
+        "original": "0147.jpg"
+      },
+      {
+        "element": "img00000867.jpg",
+        "original": "0147.jpg"
+      },
+      {
+        "element": "img00000921.jpg",
+        "original": "0158.jpg"
+      },
+      {
+        "element": "img00000937.jpg",
+        "original": "0161.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "category": "Zwierzęta",
+    "items": [
+      {
+        "element": "img00000153.jpg",
+        "original": "0031.jpg"
+      },
+      {
+        "element": "img00000158.jpg",
+        "original": "0031.jpg"
+      },
+      {
+        "element": "img00000482.jpg",
+        "original": "0083.jpg"
+      },
+      {
+        "element": "img00000483.jpg",
+        "original": "0083.jpg"
+      },
+      {
+        "element": "img00000484.jpg",
+        "original": "0083.jpg"
+      },
+      {
+        "element": "img00000487.jpg",
+        "original": "0083.jpg"
+      },
+      {
+        "element": "img00000346.jpg",
+        "original": "0064.jpg"
+      },
+      {
+        "element": "img00000347.jpg",
+        "original": "0064.jpg"
+      },
+      {
+        "element": "img00000716.jpg",
+        "original": "0122.jpg"
+      },
+      {
+        "element": "img00000717.jpg",
+        "original": "0122.jpg"
+      },
+      {
+        "element": "img00000798.jpg",
+        "original": "0138.jpg"
+      },
+      {
+        "element": "img00000886.jpg",
+        "original": "0152.jpg"
+      },
+      {
+        "element": "img00000887.jpg",
+        "original": "0152.jpg"
+      },
+      {
+        "element": "img00000917.jpg",
+        "original": "0158.jpg"
+      },
+      {
+        "element": "img00000920.jpg",
+        "original": "0158.jpg"
+      },
+      {
+        "element": "img00000938.jpg",
+        "original": "0162.jpg"
+      },
+      {
+        "element": "img00000939.jpg",
+        "original": "0162.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Przyroda",
+    "items": [
+      {
+        "element": "img00000162.jpg",
+        "original": "0032.jpg"
+      },
+      {
+        "element": "img00000163.jpg",
+        "original": "0032.jpg"
+      },
+      {
+        "element": "img00000164.jpg",
+        "original": "0032.jpg"
+      },
+      {
+        "element": "img00000213.jpg",
+        "original": "0040.jpg"
+      },
+      {
+        "element": "img00000216.jpg",
+        "original": "0041.jpg"
+      },
+      {
+        "element": "img00000217.jpg",
+        "original": "0041.jpg"
+      },
+      {
+        "element": "img00000249.jpg",
+        "original": "0048.jpg"
+      },
+      {
+        "element": "img00000340.jpg",
+        "original": "0063.jpg"
+      },
+      {
+        "element": "img00000396.jpg",
+        "original": "0071.jpg"
+      },
+      {
+        "element": "img00000397.jpg",
+        "original": "0071.jpg"
+      },
+      {
+        "element": "img00000399.jpg",
+        "original": "0071.jpg"
+      },
+      {
+        "element": "img00000400.jpg",
+        "original": "0071.jpg"
+      },
+      {
+        "element": "img00000531.jpg",
+        "original": "0092.jpg"
+      },
+      {
+        "element": "img00000773.jpg",
+        "original": "0133.jpg"
+      },
+      {
+        "element": "img00000774.jpg",
+        "original": "0133.jpg"
+      },
+      {
+        "element": "img00000922.jpg",
+        "original": "0159.jpg"
+      },
+      {
+        "element": "img00000956.jpg",
+        "original": "0165.jpg"
+      },
+      {
+        "element": "img00000957.jpg",
+        "original": "0165.jpg"
+      },
+      {
+        "element": "img00000956.jpg",
+        "original": "0165.jpg"
+      },
+      {
+        "element": "img00000957.jpg",
+        "original": "0165.jpg"
+      },
+      {
+        "element": "img00001065.jpg",
+        "original": "0186.jpg"
+      },
+      {
+        "element": "img00001066.jpg",
+        "original": "0186.jpg"
+      },
+      {
+        "element": "img00001081.jpg",
+        "original": "0192.jpg"
+      },
+      {
+        "element": "img00001082.jpg",
+        "original": "0192.jpg"
+      },
+      {
+        "element": "img00001084.jpg",
+        "original": "0194.jpg"
+      },
+      {
+        "element": "img00001102.jpg",
+        "original": "0199.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Części ciała",
+    "items": [
+      {
+        "element": "img00000119.jpg",
+        "original": "0025.jpg"
+      },
+      {
+        "element": "img00000224.jpg",
+        "original": "0042.jpg"
+      },
+      {
+        "element": "img00000225.jpg",
+        "original": "0042.jpg"
+      },
+      {
+        "element": "img00000226.jpg",
+        "original": "0042.jpg"
+      },
+      {
+        "element": "img00000360.jpg",
+        "original": "0066.jpg"
+      },
+      {
+        "element": "img00000366.jpg",
+        "original": "0067.jpg"
+      },
+      {
+        "element": "img00000370.jpg",
+        "original": "0067.jpg"
+      },
+      {
+        "element": "img00000804.jpg",
+        "original": "0139.jpg"
+      },
+      {
+        "element": "img00000807.jpg",
+        "original": "0139.jpg"
+      },
+      {
+        "element": "img00000808.jpg",
+        "original": "0139.jpg"
+      },
+      {
+        "element": "img00001007.jpg",
+        "original": "0174.jpg"
+      },
+      {
+        "element": "img00001049.jpg",
+        "original": "0182.jpg"
+      },
+      {
+        "element": "img00000254.jpg",
+        "original": "0049.jpg"
+      },
+      {
+        "element": "img00000256.jpg",
+        "original": "0049.jpg"
+      },
+      {
+        "element": "img00000257.jpg",
+        "original": "0049.jpg"
+      },
+      {
+        "element": "img00000352.jpg",
+        "original": "0065.jpg"
+      },
+      {
+        "element": "img00000353.jpg",
+        "original": "0065.jpg"
+      },
+      {
+        "element": "img00000418.jpg",
+        "original": "0073.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "XXX",
+    "items": [
+      {
+        "element": "img00000009.jpg",
+        "original": "0002.jpg"
+      },
+      {
+        "element": "img00000012.jpg",
+        "original": "0002.jpg"
+      },
+      {
+        "element": "img00000016.jpg",
+        "original": "0002.jpg"
+      },
+      {
+        "element": "img00000017.jpg",
+        "original": "0002.jpg"
+      },
+      {
+        "element": "img00000267.jpg",
+        "original": "0051.jpg"
+      },
+      {
+        "element": "img00000272.jpg",
+        "original": "0051.jpg"
+      },
+      {
+        "element": "img00000834.jpg",
+        "original": "0142.jpg"
+      },
+      {
+        "element": "img00000836.jpg",
+        "original": "0142.jpg"
+      },
+      {
+        "element": "img00001067.jpg",
+        "original": "0186.jpg"
+      },
+      {
+        "element": "img00001068.jpg",
+        "original": "0186.jpg"
+      },
+      {
+        "element": "img00001079.jpg",
+        "original": "0192.jpg"
+      },
+      {
+        "element": "img00001080.jpg",
+        "original": "0192.jpg"
+      },
+      {
+        "element": "img00000132.jpg",
+        "original": "0027.jpg"
+      },
+      {
+        "element": "img00000133.jpg",
+        "original": "0027.jpg"
+      },
+      {
+        "element": "img00000259.jpg",
+        "original": "0050.jpg"
+      },
+      {
+        "element": "img00000645.jpg",
+        "original": "0110.jpg"
+      },
+      {
+        "element": "img00000646.jpg",
+        "original": "0110.jpg"
+      },
+      {
+        "element": "img00000647.jpg",
+        "original": "0110.jpg"
+      },
+      {
+        "element": "img00000665.jpg",
+        "original": "0113.jpg"
+      }
+    ]
+  }
+]

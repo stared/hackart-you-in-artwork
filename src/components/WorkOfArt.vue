@@ -1,11 +1,11 @@
 <template>
     <div class="mdl-cell mdl-cell--4-col">
         <div id="work" class="demo-card-image mdl-card mdl-shadow--2dp"
-             v-bind:style="{background: 'url(images/' + workOfArt.fname + ') center / cover'}">
+             v-bind:style="{background: background}">
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
                 <div style="width: 80%">
-                    <span class="demo-card-image__filename">{{workOfArt.title}}</span>
+                    <span class="demo-card-image__filename">{{workOfArt.original.title}}</span>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored add-button"
                         v-on:click="markSeen" v-if="!seen"
@@ -21,14 +21,23 @@
 <script>
     export default {
         name: 'work',
-        props: ['workOfArt', 'saw'],
+        props: ['workOfArt'],
         data: function () {
-            return {seen: false};
+            return {
+                seen: false,
+                background: 'url(cropped/' + this.workOfArt.element + ') center / cover'
+            };
         },
         methods: {
             markSeen: function () {
                 this.seen = true;
                 this.$emit('work-seen', this.workOfArt);
+                if (this.seen) {
+                    this.background = 'url(images/' + this.workOfArt.original.fname + ') center / cover';
+                } else {
+                    this.background = 'url(cropped/' + this.workOfArt.element + ') center / cover';
+                }
+                console.log('background', this.background);
             }
         }
     }
