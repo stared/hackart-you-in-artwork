@@ -16,7 +16,7 @@
     import ArtsList from './components/ArtsList.vue'
     import LevelMap from './components/LevelMap.vue'
     import worksOfArt from './assets/data.json'
-    import topicsList from './assets/topics2.json'
+    import topicsList from './assets/topics.json'
     import rooms from './assets/rooms.json'
     import {EventBus} from './main.js';
 
