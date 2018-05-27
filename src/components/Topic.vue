@@ -1,23 +1,29 @@
 <template>
-    <!--<li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">-->
-        <!--<span class="mdl-list__item-primary-content">-->
-            <!--<i class="material-icons mdl-list__item-icon">star</i>{{topic.title}}-->
-        <!--</span>-->
-    <!--</li>-->
     <li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">
-        <span class="mdl-list__item-primary-content" data-badge="1">
-            <i class="material-icons mdl-list__item-icon">star</i>{{topic.title}}
-        </span>
+        <div>
+            <button>
+                <img class="category-button" src="images/0001.jpg"/><br/>
+                <span>{{topic.title}}</span>
+            </button>
+        </div>
+
     </li>
 </template>
 
 <script>
     export default {
         name: "topic",
-        props: ['topic']
+        props: ['topic', 'active']
     }
 </script>
 
 <style scoped>
-
+    .category-button {
+        clip-path: circle(120px at center);
+        display: block;
+        max-width: 300px;
+        max-height: 300px;
+        width: auto;
+        height: auto;
+    }
 </style>
