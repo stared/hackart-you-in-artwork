@@ -29,7 +29,6 @@
                 if (this.seenWorks.indexOf(work.fname) === -1) {
                     this.seenWorks.push(work.fname);
                 }
-                console.log('Already saw', this.seenWorks.length, '/', this.worksOfArt.length)
                 if (this.seenWorks.length === this.worksOfArt.length) {
                     EventBus.$emit('saw-all');
                 }

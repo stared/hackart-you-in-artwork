@@ -5,7 +5,7 @@
             <div class="mdl-card__title mdl-card--expand"></div>
             <div class="mdl-card__actions">
                 <div style="width: 80%">
-                    <span class="demo-card-image__filename">{{workOfArt.original.title}}</span>
+                    <span class="demo-card-image__filename">{{workOfArt.workOfArt.title}}</span>
                 </div>
                 <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored add-button"
                         v-on:click="markSeen" v-if="!seen"
@@ -33,11 +33,10 @@
                 this.seen = true;
                 this.$emit('work-seen', this.workOfArt);
                 if (this.seen) {
-                    this.background = 'url(images/' + this.workOfArt.original.fname + ') center / cover';
+                    this.background = 'url(images/' + this.workOfArt.workOfArt.fname + ') center / cover';
                 } else {
                     this.background = 'url(cropped/' + this.workOfArt.element + ') center / cover';
                 }
-                console.log('background', this.background);
             }
         }
     }

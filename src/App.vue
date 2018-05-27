@@ -49,14 +49,13 @@
             filteredWorksOfArt: function () {
                 let result = [];
                 if (this.selectedTopic != null) {
-                    let items = topicsList[this.selectedTopic.id]['items'];
+                    let items = topicsList[this.selectedTopic.id]['items'].slice();
                     for (let i = 0; i < items.length; i++) {
                         let item = items[i];
                         for (let j = 0; j < worksOfArt.length; j++) {
                             if (worksOfArt[j].fname === item.original) {
-                                item.original = worksOfArt[j];
+                                item.workOfArt = worksOfArt[j];
                                 result.push(item);
-                                console.log(result.length, item.original.fname);
                                 break;
                             }
                         }

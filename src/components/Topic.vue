@@ -1,10 +1,10 @@
 <template>
     <li id="topic" v-on:click="$emit('topic-selected', topic)" class="mdl-list__item">
         <div>
-            <button>
+            <div>
                 <img class="category-button" src="images/0001.jpg"/><br/>
                 <span>{{topic.title}}</span>
-            </button>
+            </div>
         </div>
 
     </li>
