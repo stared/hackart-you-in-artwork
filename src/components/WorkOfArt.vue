@@ -64,12 +64,19 @@
     .add-button {
         position: absolute;
         bottom: 12px;
-        right: 12px;;
+        right: 12px;
+        cursor: pointer;
+        transition: transform .3s;
     }
+
+    .add-button:hover {
+        transform: scale(1.5);
+    }
+
     .seen-icon {
         color: #fff;
         position: absolute;
         bottom: 18px;
-        right: 18px;;
+        right: 18px;
     }
 </style>
