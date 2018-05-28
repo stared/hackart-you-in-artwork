@@ -48,7 +48,7 @@ Model ZOO: https://github.com/tensorflow/models/blob/master/research/object_dete
 
 Model used (faster_rcnn_inception_resnet_v2_atrous_oid): http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28.tar.gz
 
-Code: ????????????
+Code: 
 
 Result: https://github.com/stared/hackart-you-in-artwork/blob/master/data/oidv3.json
 
