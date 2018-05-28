@@ -1,4 +1,24 @@
-# hackart-you-in-artwork
+# Skarby muzeum
+
+**Znajdź ukryte szczegóły na obrazach!**
+
+* [Demo video](https://www.youtube.com/watch?v=9uqrdjAgZxg)
+
+[![HackArt - Hackathon Muzeum Narodowego - zespół DS - YouTube](https://img.youtube.com/vi/9uqrdjAgZxg/0.jpg)](https://www.youtube.com/watch?v=9uqrdjAgZxg)
+
+* [Demo website](http://p.migdal.pl/hackart-you-in-artwork/)
+
+**1 miejsce** w [HackArt  ⁄ Hackathon MNW](https://hackathon.mnw.art.pl/), 26-27 ma­ja 2018, Mu­zeum Na­ro­do­we w War­sza­wie.
+
+## Skład
+
+* [Agata Chęcińska](https://www.linkedin.com/in/agata-checinska-phd-0b321b1/)
+* [Karol Majek](https://karolmajek.pl/)
+* [Piotr Migdał](https://p.migdal.pl/)
+* [Aleksandra Rutkowska](https://twitter.com/aleks_rutkowska)
+* Paweł Zięcina
+
+## Technical notes
 
 ## Object detection
 
