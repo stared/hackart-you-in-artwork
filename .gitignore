@@ -21,3 +21,4 @@ yarn-error.log*
 *.sw*
 
 .ipynb_checkpoints/
+secret.json
