@@ -11,8 +11,18 @@
                 <i class="material-icons back-button">arrow_back</i>
             </button>
             <ArtsList :worksOfArt="filteredWorksOfArt"/>
+            <div class="mdl-layout__header my-header">
+                <div class="mdl-layout__header-row header-row">
+                    <span class="mdl-layout-title">Mapa (2. piętro)</span>
+                </div>
+            </div>
             <LevelMap :rooms="rooms" width="800" height="400"/>
         </div>
+        <footer class="mdl-layout__header my-header">
+            <div class="mdl-layout__header-row header-row">
+                1. miejsce na HackArt ⁄ Hackathon MNW, 26-27 ma­ja 2018, Mu­zeum Na­ro­do­we w War­sza­wie &nbsp<a style="color:white" href="https://github.com/stared/hackart-you-in-artwork">(kliknij by dowiedzieć się więcej)</a>
+            </div>
+        </footer>
     </div>
 </template>
 
