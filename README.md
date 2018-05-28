@@ -2,6 +2,8 @@
 
 **Znajdź ukryte szczegóły na obrazach!**
 
+[![Stańczyk - wykrywanie obiektów](stanczyk_jester_object_detection.jpg)](http://p.migdal.pl/hackart-you-in-artwork/)
+
 * [Demo video](https://www.youtube.com/watch?v=9uqrdjAgZxg)
 
 [![HackArt - Hackathon Muzeum Narodowego - zespół DS - YouTube](https://img.youtube.com/vi/9uqrdjAgZxg/0.jpg)](https://www.youtube.com/watch?v=9uqrdjAgZxg)
@@ -17,6 +19,12 @@
 * [Piotr Migdał](https://p.migdal.pl/)
 * [Aleksandra Rutkowska](https://twitter.com/aleks_rutkowska)
 * Paweł Zięcina
+
+## Aplikacja
+
+[![Skarby muzuem - stron główna](website/public/screenshot_main.png)](http://p.migdal.pl/hackart-you-in-artwork/)
+
+[![Skarby muzuem - części ciała](website/public/screenshot_hands.png)](http://p.migdal.pl/hackart-you-in-artwork/)
 
 ## Technical notes
 
