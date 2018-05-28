@@ -18,7 +18,7 @@
 * [Karol Majek](https://karolmajek.pl/)
 * [Piotr Migdał](https://p.migdal.pl/)
 * [Aleksandra Rutkowska](https://twitter.com/aleks_rutkowska)
-* Paweł Zięcina
+* [Paweł Zięcina](https://github.com/pawel-ziecina)
 
 ## Aplikacja
 
