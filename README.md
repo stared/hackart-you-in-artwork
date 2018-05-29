@@ -34,7 +34,7 @@
 
 Demo: https://cloud.google.com/vision/
 
-Code: https://github.com/stared/hackart-you-in-artwork/blob/master/scripts_karol/gcp-vision.py
+Code: https://github.com/stared/hackart-you-in-artwork/blob/master/aux/scripts_karol/gcp-vision.py
 
 Result: https://github.com/stared/hackart-you-in-artwork/blob/master/data/gcp-vision.json
 
@@ -48,7 +48,7 @@ Model ZOO: https://github.com/tensorflow/models/blob/master/research/object_dete
 
 Model used (faster_rcnn_inception_resnet_v2_atrous_oid): http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28.tar.gz
 
-Code: 
+Code: https://github.com/stared/hackart-you-in-artwork/blob/master/aux/scripts_karol/evaluate_on_images.py
 
 Result: https://github.com/stared/hackart-you-in-artwork/blob/master/data/oidv3.json
 
@@ -57,6 +57,10 @@ Result: https://github.com/stared/hackart-you-in-artwork/blob/master/data/oidv3.
 In Vue.js.
 
 ### Install
+
+```
+npm i @vue/cli-service
+```
 
 ### Run
 
